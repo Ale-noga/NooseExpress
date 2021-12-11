@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BudgetService } from './budget.service';
 
 @Component({
   selector: 'app-budget-page',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BudgetPageComponent implements OnInit {
 
-  constructor() { }
+  pedidos: any;
 
-  ngOnInit(): void {
-  }
+  constructor(private budgetService: BudgetService) { }
+
+  ngOnInit(){
+
+}
 
 }

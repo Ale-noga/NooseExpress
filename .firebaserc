@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "nooseexpress"
+  },
+  "targets": {
+    "nooseexpress": {
+      "hosting": {
+        "NooseExpress": [
+          "nooseexpress"
+        ]
+      }
+    }
   }
 }

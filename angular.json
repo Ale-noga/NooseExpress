@@ -39,7 +39,7 @@
               "./node_modules/popper.js/dist/umd/popper.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.js"
             ]
-},
+          },
           "configurations": {
             "production": {
               "budgets": [
@@ -107,6 +107,16 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "NooseExpress:build:production",
+            "firebaseProject": "nooseexpress",
+            "firebaseHostingSite": "nooseexpress"
           }
         }
       }
