@@ -10,8 +10,8 @@ export class BudgetService {
     private firestore: AngularFirestore
   ) { }
 
-  read_Icecreams(){
-    return this.firestore.collection('Icecreams').snapshotChanges();
+  getAll(){
+    return this.firestore.collection('pedidos').snapshotChanges();
   }
 
 }
